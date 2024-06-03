@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+:root {
+  --header-bg-color: #1f2937;
+  --header-logo-color: #f9faf8;
+  --header-link-color: #e5e7eb;
+}
+.wrapper {
+  margin-inline: auto;
+  width: min(100% - 32px, 1440px);
+}
+
+/* TOP NAV */
+
+.top-nav {
+  background-color: var(--header-bg-color);
+  padding-block: 20px;
+}
+
+.top-nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-nav__logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.top-nav__logo-link {
+  text-decoration: none;
+  color: var(--header-logo-color);
+}
+
+.top-nav__logo-link:hover {
+  opacity: 80%;
+  transition: 0.1s ease-in-out;
+}
+
+.top-nav__nav-list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+}
+
+.top-nav__nav-list-item {
+  font-size: 18px;
+}
+
+.top-nav__nav-list-link {
+  color: var(--header-link-color);
+  text-decoration: none;
+}
+
+.top-nav__nav-list-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 2px;
+  transition: 0.1s ease-in-out;
+}
