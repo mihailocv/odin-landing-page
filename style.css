@@ -57,7 +57,10 @@ p {
 
   --info-title-color: #1f2937;
   --info-frame-color: #3882f6;
-  --info-desc-color: #3f5169;
+  --info-desc-color: #1f2937;
+
+  --quote-bg-color: #e5e7eb;
+  --quote-cite-color: #1f2937;
 }
 .wrapper {
   margin-inline: auto;
@@ -213,4 +216,26 @@ p {
 .info__description {
   width: 200px;
   text-align: center;
+  color: var(--info-desc-color);
+}
+
+/* QUOTE SECTION */
+
+.quote{
+    background-color: var(--quote-bg-color);
+    padding-block-start: 150px;
+    padding-block-end: 100px;
+}
+
+.quote__cite{
+    color: var(--quote-cite-color);
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.quote__auth{
+    margin-block-start: 5px;
+    font-size: 24px;
+    text-align: right;
+    font-weight: bold;
 }
